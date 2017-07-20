@@ -1,0 +1,391 @@
+/*--------------------------------------------------------------
+# Blog Related Templates
+--------------------------------------------------------------*/
+
+.light-green {
+  background-color: #abbeb7;
+
+  h3, .cta-sub {
+    color: $color_white;
+  }
+}
+
+.light-yellow {
+  background-color: #fdfbe8;
+
+  h3, .cta-sub {
+    color: $color_blue;
+  }
+}
+
+.light-blue {
+  background-color: #a5b5c1;
+
+  h3, .cta-sub {
+    color: $color_white;
+  }
+}
+
+.pink {
+  background-color: #f8cbd3;
+
+  h3, .cta-sub {
+    color: $color_blue;
+  }
+}
+
+.blog {
+  .site-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 2em 2em;
+
+    @include desktop {
+      width: 100%;
+      margin-bottom: 0px;
+    }
+
+    #secondary {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
+  }
+}
+
+// Recent Posts
+.blog-feat-recent-posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-latest-news {
+  height: 350px;
+  padding: 1%;
+
+  .latest-thumb-wrapper-small {
+    height: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .home-post-wrapper {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 6% 4%;
+    text-align: center;
+    min-height: 80px;
+    transition: all .2s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 1);
+
+      h4 {
+        border-bottom: 2px solid $color_pink;
+        transition: all .2s ease;
+      }
+    }
+  }
+
+  &:nth-child(1) {
+    flex: 1 0 50%;
+
+    @include tablet {
+      flex: 1 0 25%;
+    }
+
+    h4 {
+      font-size: 1em;
+      color: $color_blue;
+      font-family: $font__main;
+      font-weight: 300;
+      text-transform: none;
+    }
+  }
+
+  &:nth-child(2) {
+    flex: 2 0 100%;
+
+    @include tablet {
+      flex: 1 0 50%;
+    }
+
+    h4 {
+      font-size: 1.5em;
+      color: $color_blue;
+      font-family: $font__main;
+      font-weight: 300;
+      text-transform: none;
+    }
+  }
+
+  &:nth-child(3) {
+    flex: 1 0 50%;
+
+    @include tablet {
+      flex: 1 0 25%;
+    }
+
+    h4 {
+      font-size: 1em;
+      color: $color_blue;
+      font-family: $font__main;
+      font-weight: 300;
+      text-transform: none;
+    }
+  }
+}
+
+// Restaurant restaurant-reviews
+.blog-feed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4em auto 2em;
+
+  .underline-thin {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .secondary-section-title {
+      flex: 1 0 50%;
+      align-self: flex-start;
+    }
+
+    .see-more-cat {
+      flex: 1 0 50%;
+      text-align: right;
+    }
+  }
+
+  .cat-feed {
+    flex: 2 0 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1em 0;
+
+    @include tablet {
+      flex: 2 0 68%;
+    }
+
+    .blog-feed-cat {
+      flex: 1 0 100%;
+      max-width: 100%;
+      display: block;
+      background-size: cover;
+      background-position: center center;
+      height: 250px;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      padding: 2%;
+      margin: 0 0 2em;
+
+      @include tablet {
+        flex: 1 0 50%;
+        max-width: 48%;
+        height: 200px;
+        margin: 0 0 1em;
+      }
+
+      .home-post-wrapper {
+        background-color: rgba(255,255,255,.8);
+        padding: 4% 6%;
+        width: 100%;
+        min-height: 60px;
+        transition: all .5s ease;
+
+        h4 {
+          font-family: playfair_display,serif;
+          color: #1d4765;
+          font-weight: 300;
+          border-bottom: 2px solid #1d4765;
+        }
+      }
+
+      &:hover {
+        .home-post-wrapper{
+          background-color: rgba(255,255,255,1);
+        }
+
+        h4 {
+          border-bottom: 2px solid $color_pink;
+          transition: all .5s ease;
+        }
+      }
+    }
+  }
+
+  .cat-sidebar {
+    flex: 1 0 25%;
+    margin-top: 1em;
+    padding: 4% 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+      margin-left: 1em;
+    }
+
+    // clip-path: polygon(50% 0%, 100% 22%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+    h3 {
+      font-family: playfair_display,serif;
+      font-weight: 300;
+      font-size: 28px;
+    }
+
+    .cta-sub {
+      font-family: $font__sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .button-link {
+      margin: 1em auto;
+    }
+  }
+}
+
+// Blog Categories
+
+.blog-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom: 2px solid $color_green;
+  margin-bottom: 3em;
+
+    .cat-wrap {
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+
+    .cat-33 {
+      flex: 0 0 100%;
+
+      @include tablet {
+        flex: 0 0 31%;
+      }
+    }
+
+    .cat-25 {
+      flex: 0 0 48%;
+
+      @include desktop {
+        flex: 0 0 23%;
+      }
+    }
+}
+
+.cat-single {
+  align-items: flex-end;;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  margin-bottom: 1em;
+  min-width: 150px;
+  position: relative;
+
+  &:before {
+    content: '';
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.1) 64%,rgba(0,0,0,0.1) 100%);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: all 0.5 ease;
+  }
+
+  &:hover {
+
+    &:before {
+      background: transparent;
+      transition: all 0.8s ease;
+    }
+
+    h4 {
+      display: none;
+      transition: all 0.8s ease;
+    }
+  }
+
+  h4 {
+    color: $color_white;
+    font-size: 2em;
+    padding-bottom: 1em;
+    position: absolute;
+    text-shadow: 1px 0px 5px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  @include desktop {
+    min-width: 225px;
+    height: 300px;
+  }
+}
+
+#recipes {
+  background: url(../../assets/images/cat-recipes.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#nutrition {
+  background: url(../../assets/images/cat-nutrition.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#psychology {
+  background: url(../../assets/images/cat-psychology.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#events {
+  background: url(../../assets/images/cat-events.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#restaurant-reviews {
+  background: url(../../assets/images/cat-restaurant-reviews.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#product-love {
+  background: url(../../assets/images/cat-product-love.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#podcasts {
+  background: url(../../assets/images/cat-podcast.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+// Comments
+
+#comments {
+  margin-bottom: 6em;
+}
+
+.blog-pop {
+  display: none;
+}

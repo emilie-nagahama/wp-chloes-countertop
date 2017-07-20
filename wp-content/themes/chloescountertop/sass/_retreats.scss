@@ -1,0 +1,98 @@
+
+
+
+// Retreats Page
+
+.retreats-intro {
+
+}
+
+.upcoming-retreats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2em auto 0;
+  max-width: 90%;
+
+  @include tablet {
+    justify-content: space-between;
+    margin-top: 4em;
+  }
+
+  h3 {
+    flex: 0 0 100%;
+    text-align: left;
+    font-family: $font__sans-serif, sans-serif;
+    font-size: 3em;
+    font-style: normal;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 2px solid $color_blue;
+    margin-bottom: 0.5em;
+  }
+
+  .retreat-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex: 0 0 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-width: 250px;
+    padding: 2%;
+    margin-bottom: 1em;
+
+    @include tablet {
+      flex: 0 0 48%;
+    }
+
+    .home-post-wrapper {
+      background-color: rgba(255,255,255,.9);
+      padding: 4% 6%;
+      width: 100%;
+
+      h3 {
+        font-size: 1.4em;
+        color: #1d4765;
+        font-weight: 300;
+        margin-bottom: 0;
+        text-transform: none;
+        text-align: center;
+      }
+
+      .info-on-hover {
+        display: none;
+        transition: all 0.8s ease-in-out;
+        text-align: left;
+      }
+
+      &:hover {
+        background-color: rgba(255,255,255,1);
+
+        h3 {
+          border-bottom: 2px solid $color_blue;
+          line-height: 1.2em;
+          padding-bottom: 0.5em;
+        }
+
+        .info-on-hover {
+          display: block;
+          transition: all 0.8s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.retreat-video {
+  margin: 6em auto;
+
+  h3 {
+    text-align: center;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+}
+// Single Retreats Page

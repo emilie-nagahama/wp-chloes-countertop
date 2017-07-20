@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/* Buttons */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: $color_pink;
+	border: 1px solid $color_pink;
+	color: $color_white;
+	font-size: 1.3em;
+	line-height: 1;
+	padding: 0.4em 2em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:active,
+	&:focus {
+		border: inset 1.5px;
+		outline: none;
+	}
+}
+
+/* Fields */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+
+	&:focus {
+		color: #111;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 3px;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+
+/* Comment Form */
+#reply-title {
+	font-weight: 700;
+  font-style: italic;
+  color: $color_blue;
+  font-size: 1.5em;
+	@include blue-border;
+}
+
+// Search Page
+.search, .search-results {
+
+	.page-title {
+			
+	}
+}
