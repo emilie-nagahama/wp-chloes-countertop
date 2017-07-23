@@ -97,6 +97,7 @@
 .archive-wrap {
   flex-basis: 48%;
   margin-bottom: 1em;
+  max-width: 300px;
 
     @include desktop {
       flex-basis: 30%;
@@ -105,11 +106,16 @@
 }
 
 .podcast-cover-image {
-  margin: 0 0 0.5em;
+  margin: 0 0 1em;
+  max-height: 300px;
 
-    @include desktop {
-      margin: 0;
-    }
+  @include desktop {
+    margin: 0;
+  }
+
+  a {
+    max-height: 300px;
+  }
 }
 
 .home-podcast-cover-image:nth-child(-n+3) {
@@ -223,7 +229,6 @@
 // Living True
 
 #patterned-banner.lt {
-
   flex-wrap: wrap;
   justify-content: center;
   min-height: 300px;

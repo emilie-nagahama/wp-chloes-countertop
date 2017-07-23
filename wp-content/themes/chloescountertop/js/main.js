@@ -1,12 +1,20 @@
-jQuery(document).ready(function($) {
+jQuery(function($) {
 
   $('.home-slider').slick({
     autoplay: true,
     autoplaySpeed: 3000,
-    // dots: true,
     slidesToShow: 1,
-    // centerMode: true,
     adaptiveHeight: true
+  });
+
+  $('.living-true-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    dots: true,
+    adaptiveHeight: true,
+    prevArrow: false,
+    nextArrow: false
   });
 
   //Mobile Menu Function
@@ -108,4 +116,4 @@ jQuery(document).ready(function($) {
   });
 
 //end of document.ready
-})(jQuery);
+});

@@ -8,6 +8,11 @@
   max-width: 1080px;
   margin: 0 auto;
   margin-top: -325px;
+
+  .underline-thin.blue, .blog-feat-recent-posts {
+    max-width: 95%;
+    margin: 0 auto;
+  }
 }
 
 .site-content {

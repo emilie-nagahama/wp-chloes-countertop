@@ -67,10 +67,8 @@ textarea {
 	@include blue-border;
 }
 
-// Search Page
-.search, .search-results {
-
-	.page-title {
-			
-	}
+// Contact and Application Forms
+.frm_style_formidable-style.with_frm_style .frm_required {
+  width: 100%;
+  margin: 0;
 }

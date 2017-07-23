@@ -1,6 +1,5 @@
 
 // Rem output with px fallback
-
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
 	font-size: $sizeValue * 1rem;
@@ -12,7 +11,7 @@
 	background-size: cover;
 	background-position: top center;
 	min-height: 400px;
-	height: 400px;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -69,7 +68,7 @@
 @mixin button {
 	color: #fff;
 	background-color: $color_pink;
-	font-size: 1em;
+	font-size: 1.5em;
 	padding: 0.2em 1em;
 	text-align: center;
 	text-transform: uppercase;
@@ -111,7 +110,6 @@
 }
 
 // h2 tag styles
-
 @mixin h2-tag-400 {
 	color: #fff;
 	font-size: 2.5em;
@@ -132,20 +130,4 @@
 		span {
 			font-weight: 700;
 		}
-}
-
-// Breakpoints
-/* 600px */
-
-@mixin tablet {
-  @media screen and (min-width: 600px ) {
-    @content;
-  }
-}
-
-/* 1024px */
-@mixin desktop {
-  @media screen and (min-width: 1024px) {
-    @content;
-  }
 }
