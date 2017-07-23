@@ -67,6 +67,28 @@ get_header(); ?>
   <span><?php echo CFS()->get( 'lt_content_block_four' ); ?></span>
 
   <!-- CFS for Title - blue background -->
+  <div class="living-true-testimonials">
+    <h2 class="h2-tag blue"><?php _e('Testimonials'); ?></h2>
+    <?php
+      $posts = get_field('testimonials');
+
+      if( $posts ): ?>
+          <ul class="living-true-slider">
+          <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+              <?php setup_postdata($post); ?>
+              <li class="testimonial-wrapper">
+                  <div class="quote-author">
+                    <?php the_title(); ?>
+                  </div>
+                  <div class="quote">
+                    <p>" <?php the_field('quote'); ?> "</p>
+                  </div>
+              </li>
+          <?php endforeach; ?>
+          </ul>
+          <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+      <?php endif; ?>
+  </div>
 
   <div class="blue-title" id="button-apply">
     <h2 class="section-title white" ><?php echo CFS()->get( 'lt_blue_title_four' ); ?></h2>

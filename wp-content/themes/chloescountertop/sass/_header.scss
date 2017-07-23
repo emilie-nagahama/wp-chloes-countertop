@@ -46,7 +46,7 @@
   margin: 0 1em;
 
   a {
-    flex: 1 0 15%;
+    flex: 1 0 13%;
   }
 
   @include desktop {
@@ -56,8 +56,8 @@
 
 .logo {
   filter: brightness(12);
-  min-width: 90px;
-  max-width: 180px;
+  min-width: 60px;
+  max-width: 120px;
 
 
   @include desktop {

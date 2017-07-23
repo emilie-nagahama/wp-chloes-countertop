@@ -224,7 +224,7 @@ a.a-title:hover {
 	font-style: italic;
 	font-weight: 500;
 	line-height: 1.3em;
-	margin: 2em 0 0;
+	margin: 2em 0 1em;
 	padding: 0.5em 0;
 	text-align: center;
 
@@ -234,6 +234,7 @@ a.a-title:hover {
 		}
 
 		h2 {
+      font-size: 1.2em;
 			line-height: 1.3em;
 		}
 }
@@ -376,6 +377,7 @@ a.a-title:hover {
 		font-style: normal;
 		font-weight: 300;
 		line-height: 1.6em;
+    margin: 2em 0 1em;
 	}
 }
 
