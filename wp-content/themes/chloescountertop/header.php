@@ -13,7 +13,8 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link rel="stylesheet" type="text/css" href="<?php get_template_directory_uri() ?>wp-content/themes/chloescountertop/assets/slick/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+
 	<?php wp_head(); ?>
 
 	</head>

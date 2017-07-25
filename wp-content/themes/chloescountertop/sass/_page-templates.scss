@@ -22,6 +22,10 @@
     @include desktop {
       margin:  2em 0 4em;
     }
+
+    .podcast-cover-image a {
+      max-height: 428px;
+    }
 }
 
 .podcast-cover-image {
@@ -103,19 +107,15 @@
       flex-basis: 30%;
       margin-bottom: 2em;
     }
-}
 
-.podcast-cover-image {
-  margin: 0 0 1em;
-  max-height: 300px;
+    .podcast-cover-image {
+      margin: 0 0 1em;
+      max-height: 276px;
 
-  @include desktop {
-    margin: 0;
-  }
-
-  a {
-    max-height: 300px;
-  }
+      a {
+        max-height: 276px;
+      }
+    }
 }
 
 .home-podcast-cover-image:nth-child(-n+3) {

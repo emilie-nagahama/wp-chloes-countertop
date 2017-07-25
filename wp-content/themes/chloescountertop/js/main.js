@@ -17,6 +17,16 @@ jQuery(function($) {
     nextArrow: false
   });
 
+  $('.mission-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 1,
+    dots: false,
+    adaptiveHeight: true,
+    prevArrow: false,
+    nextArrow: false
+  });
+
   //Mobile Menu Function
   $('.menu-button').click(function(event) {
     event.preventDefault();
