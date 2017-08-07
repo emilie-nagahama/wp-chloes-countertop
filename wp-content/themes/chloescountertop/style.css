@@ -296,6 +296,10 @@ p {
 .entry-content img {
   margin-bottom: 2em; }
 
+.page-template-default .title {
+  font-style: normal;
+  font-weight: 300; }
+
 .page-template-default h1 {
   font-size: 52px;
   font-weight: 700;
@@ -633,7 +637,8 @@ a:focus, a:active {
 
 .underline-thin {
   width: 100%;
-  border-bottom: 2px solid #1d4765; }
+  border-bottom: 2px solid #1d4765;
+  margin-bottom: 1em; }
   .underline-thin.green {
     border-bottom: 2px solid #3d7780;
     margin-bottom: 1em; }
@@ -1240,7 +1245,7 @@ a {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  background-position: -314px; }
+  background-position: -542px; }
   @media screen and (min-width: 600px) {
     #about-banner {
       background-position: top center; } }
@@ -1355,6 +1360,7 @@ a {
 
 #podcast-banner {
   background: url(../../assets/images/CCT-Banner-Podcast.jpg) no-repeat;
+  background-position: -508px;
   background-size: cover;
   background-position: top center;
   min-height: 400px;
@@ -1366,8 +1372,7 @@ a {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: end;
-      justify-content: flex-end;
-  background-position: -660px; }
+      justify-content: flex-end; }
   @media screen and (min-width: 600px) {
     #podcast-banner {
       background-position: top center; } }
@@ -2820,7 +2825,7 @@ div#button-apply:before {
       border-color: #fff;
       color: #fff; } }
 
-.single .home-post-header {
+.single .home-post-header, .page-template-default .home-post-header {
   border-bottom: 2px solid #1d4765;
   margin-bottom: 2em;
   padding-bottom: 1em; }
@@ -3249,19 +3254,30 @@ div#button-apply:before {
   margin: 4em auto; }
 
 .story-blog-posts ul {
-  margin: 2em 0 0;
-  padding: 0;
-  list-style: none;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  margin: 2em 0 0;
+  padding: 0; }
   .story-blog-posts ul li {
-    -ms-flex-preferred-size: 22%;
-        flex-basis: 22%;
-    max-width: 200px; }
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+    margin-bottom: 2em; }
+    @media screen and (min-width: 800px) {
+      .story-blog-posts ul li {
+        -ms-flex-preferred-size: 22%;
+            flex-basis: 22%;
+        max-width: 200px; } }
+    .story-blog-posts ul li .h4-title {
+      margin-top: 1em;
+      font-size: 1em; }
 
 .story-blog-posts a, .story-blog-posts:visited {
+  display: block;
   text-align: center;
   font-weight: 300;
   color: #1d4765; }
@@ -3273,12 +3289,19 @@ div#button-apply:before {
 
 .about-blog-thumb {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   margin-bottom: 1em; }
+  @media screen and (min-width: 600px) {
+    .about-blog-thumb {
+      margin: 0 auto; } }
+  @media screen and (min-width: 800px) {
+    .about-blog-thumb {
+      width: 200px;
+      height: 200px; } }
 
 .mission-statements {
   text-align: center;
@@ -3302,8 +3325,7 @@ ul.mission-slider {
     animation: center;
     display: -ms-flexbox;
     display: flex;
-    height: 250px !important;
-    overflow: hidden !important; }
+    height: 250px !important; }
   ul.mission-slider .slick-list {
     max-width: 60%;
     padding-top: 9%; }
@@ -3315,6 +3337,8 @@ ul.mission-slider {
 .about-cta {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin: 3em auto 6em; }
@@ -3332,19 +3356,44 @@ ul.mission-slider {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0 auto 2em;
     width: 300px;
     height: 300px; }
   .about-cta.mentorship-cta .about-cta-left, .about-cta.holistic-cta .about-cta-left {
-    -ms-flex-preferred-size: 33%;
-        flex-basis: 33%; }
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+    @media screen and (min-width: 800px) {
+      .about-cta.mentorship-cta .about-cta-left, .about-cta.holistic-cta .about-cta-left {
+        -ms-flex-preferred-size: 33%;
+            flex-basis: 33%; } }
   .about-cta.mentorship-cta .about-cta-right, .about-cta.holistic-cta .about-cta-right {
-    -ms-flex-preferred-size: 60%;
-        flex-basis: 60%; }
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+    @media screen and (min-width: 800px) {
+      .about-cta.mentorship-cta .about-cta-right, .about-cta.holistic-cta .about-cta-right {
+        -ms-flex-preferred-size: 60%;
+            flex-basis: 60%; } }
 
 .about-cta.intuitive-cta .about-cta-left, .about-cta.w_p-cta .about-cta-left {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%; }
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-order: 2;
+      order: 2; }
+  @media screen and (min-width: 800px) {
+    .about-cta.intuitive-cta .about-cta-left, .about-cta.w_p-cta .about-cta-left {
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+      -ms-flex-order: 1;
+          order: 1; } }
 
 .about-cta.intuitive-cta .about-cta-right, .about-cta.w_p-cta .about-cta-right {
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%; }
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-order: 1;
+      order: 1; }
+  @media screen and (min-width: 800px) {
+    .about-cta.intuitive-cta .about-cta-right, .about-cta.w_p-cta .about-cta-right {
+      -ms-flex-preferred-size: 33%;
+          flex-basis: 33%;
+      -ms-flex-order: 2;
+          order: 2; } }

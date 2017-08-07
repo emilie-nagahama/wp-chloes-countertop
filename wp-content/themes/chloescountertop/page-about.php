@@ -103,7 +103,7 @@ get_header(); ?>
       <div class="cta-content">
         <h4 class="cta-heading"><?php the_field('holistic'); ?></h4>
         <p><?php the_field('holistic_copy'); ?></p>
-        <a href="<?php the_field('holistic_page_link'); ?>" class="button-link cta-page-link"><?php _e('Learn about coaching with chloe') ?></a>
+        <a href="<?php the_field('holistic_page_link'); ?>" class="button-link cta-page-link"><?php _e('Get in touch') ?></a>
       </div>
     </div>
   </div>

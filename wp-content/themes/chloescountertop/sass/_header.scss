@@ -396,7 +396,7 @@
 
 // Single page headers (podcast, events, retreats)
 
-.single .home-post-header {
+.single .home-post-header, .page-template-default .home-post-header{
   border-bottom: 2px solid $color_blue;
   margin-bottom: 2em;
   padding-bottom: 1em;

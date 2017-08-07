@@ -219,7 +219,7 @@
   background: url(../../assets/images/CCT-Banner-About.jpg) no-repeat;
 
   @include banner;
-  background-position: -314px;
+  background-position: -542px;
 }
 
 #books-banner {
@@ -267,6 +267,7 @@
 
 #podcast-banner {
   background: url(../../assets/images/CCT-Banner-Podcast.jpg) no-repeat;
+  background-position: -508px;
 
   @include banner;
   justify-content: flex-end;
@@ -274,8 +275,6 @@
   @include desktop {
     justify-content: flex-end;
   }
-  // background-position: -416px;
-    background-position: -660px;
 
   .tag-line {
     display: block;

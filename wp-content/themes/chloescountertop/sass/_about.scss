@@ -4,20 +4,33 @@
 }
 
 .story-blog-posts {
+
   ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
     margin: 2em 0 0;
     padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
 
     li {
-      flex-basis: 22%;
-      max-width: 200px;
+      flex-basis: 47%;
+      margin-bottom: 2em;
+
+      @include tablet-mid {
+        flex-basis: 22%;
+        max-width: 200px;
+      }
+
+      .h4-title {
+        margin-top: 1em;
+        font-size: 1em;
+      }
     }
   }
 
   a, &:visited {
+    display: block;
     text-align: center;
     font-weight: 300;
     color: $color_blue;
@@ -38,12 +51,21 @@
 
 .about-blog-thumb {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   margin-bottom: 1em;
+
+  @include tablet {
+    margin: 0 auto;
+  }
+
+  @include tablet-mid {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .mission-statements {
@@ -72,7 +94,7 @@ ul.mission-slider {
     animation: center;
     display: flex;
     height: 250px !important;
-    overflow: hidden !important;
+    // overflow: hidden !important;
   }
 
   .slick-list {
@@ -90,6 +112,7 @@ ul.mission-slider {
 
 .about-cta {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 3em auto 6em;
 
@@ -111,18 +134,31 @@ ul.mission-slider {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 0 auto 2em;
     width: 300px;
     height: 300px;
+
+    @include tablet-mid {
+
+    }
   }
 
   &.mentorship-cta, &.holistic-cta {
 
     .about-cta-left {
-      flex-basis: 33%;
+      flex-basis: 100%;
+
+      @include tablet-mid {
+        flex-basis: 33%;
+      }
     }
 
     .about-cta-right {
-      flex-basis: 60%;
+      flex-basis: 100%;
+
+      @include tablet-mid {
+        flex-basis: 60%;
+      }
     }
   }
 
@@ -132,11 +168,23 @@ ul.mission-slider {
   &.intuitive-cta, &.w_p-cta {
 
     .about-cta-left {
-      flex-basis: 60%;
+      flex-basis: 100%;
+      order: 2;
+
+      @include tablet-mid {
+        flex-basis: 60%;
+        order: 1;
+      }
     }
 
     .about-cta-right{
-      flex-basis: 33%;
+      flex-basis: 100%;
+      order: 1;
+
+      @include tablet-mid {
+        flex-basis: 33%;
+        order: 2;
+      }
     }
   }
 }
