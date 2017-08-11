@@ -1186,6 +1186,9 @@ a {
           #home-banner .home-slider .home-slide.pull-text_right .home-banner-text {
             max-width: 50%;
             margin: auto 10% auto 0; } }
+        @media screen and (min-width: 1024px) {
+          #home-banner .home-slider .home-slide.pull-text_right .home-banner-text:nth-child(3), #home-banner .home-slider .home-slide.pull-text_right .home-banner-text:nth-child(4) {
+            margin: auto; } }
 
 #home-banner .home-banner-text {
   max-width: 80%;

@@ -9,7 +9,7 @@ jQuery(function($) {
 
   $('.living-true-slider').slick({
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     dots: true,
     adaptiveHeight: true,
@@ -19,7 +19,7 @@ jQuery(function($) {
 
   $('.mission-slider').slick({
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2500,
     slidesToShow: 1,
     dots: false,
     adaptiveHeight: true,
