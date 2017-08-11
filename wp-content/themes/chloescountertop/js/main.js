@@ -8,7 +8,7 @@ jQuery(function($) {
   });
 
   $('.living-true-slider').slick({
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 1,
     dots: true,
@@ -18,7 +18,7 @@ jQuery(function($) {
   });
 
   $('.mission-slider').slick({
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 4000,
     slidesToShow: 1,
     dots: false,
