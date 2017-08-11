@@ -121,8 +121,8 @@
         flex-direction: row-reverse;
 
         .home-banner-text {
-          max-width: 80%;
-          margin: auto 0;
+          max-width: 90%;
+          margin: auto;
           text-align: center;
 
           @include desktop {
