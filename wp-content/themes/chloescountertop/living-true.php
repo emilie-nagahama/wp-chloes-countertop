@@ -9,7 +9,7 @@ get_header(); ?>
 <div id="livingtrue-banner" class="banner">
   <div class="tag-line">
       <h2 class="h2-tag blue"><span>Living True</span></h2>
-      <h3 class="sub-text blue">One on One Coaching</h3>
+      <h3 class="sub-text blue">One on One Mentorship</h3>
       <h3 class="sub-text blue">Custom Tailored to you and your Truth</h3>
   </div>
 </div>

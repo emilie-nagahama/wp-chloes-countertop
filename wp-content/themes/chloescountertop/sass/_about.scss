@@ -1,0 +1,195 @@
+
+.about-story {
+  margin: 4em auto;
+}
+
+.story-blog-posts {
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    margin: 2em 0 0;
+    padding: 0;
+
+    li {
+      flex-basis: 47%;
+      margin-bottom: 2em;
+
+      @include tablet-mid {
+        flex-basis: 22%;
+        max-width: 200px;
+      }
+
+      .h4-title {
+        margin-top: 1em;
+        font-size: 1em;
+      }
+    }
+  }
+
+  a, &:visited {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    color: $color_blue;
+
+    &:focus, &:hover {
+
+      .about-blog-thumb {
+        box-shadow: 0 10px 33px 0 rgba(0,0,0,.3);
+        transition: all .5s ease;
+      }
+
+      .h4-title {
+        color: $color_pink;
+      }
+    }
+  }
+}
+
+.about-blog-thumb {
+  display: block;
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 1em;
+
+  @include tablet {
+    margin: 0 auto;
+  }
+
+  @include tablet-mid {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.mission-statements {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+ul.mission-slider {
+  margin: 0;
+  padding: 0;
+  background-image: url('../../assets/images/my-missing.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  list-style: none;
+  width: 100%;
+  height: 300px;
+
+  li p {
+    font-size: 1.3em;
+    color: $color_blue;
+  }
+
+  .slick-list, .slick-track {
+    animation: center;
+    display: flex;
+    height: 250px !important;
+    // overflow: hidden !important;
+  }
+
+  .slick-list {
+    max-width: 60%;
+    padding-top: 9%;
+  }
+}
+
+.offerings {
+  .h2-tag {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.about-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3em auto 6em;
+
+  .button-link {
+    max-width: 400px;
+  }
+
+  .cta-heading {
+    border-bottom: 2px solid $color_blue;
+    color: $color_blue;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+    width: 100%;
+  }
+
+  .feat-img {
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 2em;
+    width: 300px;
+    height: 300px;
+
+    @include tablet-mid {
+
+    }
+  }
+
+  &.mentorship-cta, &.holistic-cta {
+
+    .about-cta-left {
+      flex-basis: 100%;
+
+      @include tablet-mid {
+        flex-basis: 33%;
+      }
+    }
+
+    .about-cta-right {
+      flex-basis: 100%;
+
+      @include tablet-mid {
+        flex-basis: 60%;
+      }
+    }
+  }
+
+}
+
+.about-cta {
+  &.intuitive-cta, &.w_p-cta {
+
+    .about-cta-left {
+      flex-basis: 100%;
+      order: 2;
+
+      @include tablet-mid {
+        flex-basis: 60%;
+        order: 1;
+      }
+    }
+
+    .about-cta-right{
+      flex-basis: 100%;
+      order: 1;
+
+      @include tablet-mid {
+        flex-basis: 33%;
+        order: 2;
+      }
+    }
+  }
+}
+
+
+.about-page-video {
+  margin-bottom: 6em;
+}

@@ -91,6 +91,7 @@ a:focus, a:active {
 .underline-thin {
 	width: 100%;
 	border-bottom: 2px solid $color_blue;
+  margin-bottom: 1em;
 
 		&.green {
 			border-bottom: 2px solid $color_green;

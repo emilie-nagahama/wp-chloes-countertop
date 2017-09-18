@@ -121,13 +121,21 @@
         flex-direction: row-reverse;
 
         .home-banner-text {
-          max-width: 80%;
-          margin: auto 0;
+          max-width: 90%;
+          margin: auto;
           text-align: center;
 
           @include desktop {
             max-width: 50%;
             margin: auto 10% auto 0;
+          }
+
+          &:nth-child(3),
+          &:nth-child(4) {
+
+            @include desktop {
+              margin: auto;
+            }
           }
         }
       }
@@ -203,23 +211,11 @@
   }
 }
 
-
-
-// #home-banner {
-//   background: url(../../assets/images/CCT-Banner-Home.jpg) no-repeat;
-//   @include banner;
-//   // background-position: -250px top;
-//
-//   @include desktop {
-//     // background-position: -300px top;
-//   }
-// }
-
 #about-banner {
   background: url(../../assets/images/CCT-Banner-About.jpg) no-repeat;
 
   @include banner;
-  background-position: -314px;
+  background-position: -542px;
 }
 
 #books-banner {
@@ -267,6 +263,7 @@
 
 #podcast-banner {
   background: url(../../assets/images/CCT-Banner-Podcast.jpg) no-repeat;
+  background-position: -508px;
 
   @include banner;
   justify-content: flex-end;
@@ -274,8 +271,6 @@
   @include desktop {
     justify-content: flex-end;
   }
-  // background-position: -416px;
-    background-position: -660px;
 
   .tag-line {
     display: block;

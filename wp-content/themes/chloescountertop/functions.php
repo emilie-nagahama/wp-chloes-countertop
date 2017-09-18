@@ -128,8 +128,6 @@ function cct_starter_scripts() {
 
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/build/js/main.min.js', array(), true );
 
-	wp_enqueue_script( 'slider', get_template_directory_uri() . '/build/js/slider.min.js', array(), true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
