@@ -61,7 +61,9 @@
 
   <div class="podcast-archive-gallery">
     <?php
-      $args = array( 'post_type' => 'podcast', 'posts_per_page' => 50 );
+      $args = array( 'post_type' => 'podcast',
+                     'posts_per_page' => 100,
+                     'offset'=> 1 );
       $loop = new WP_Query( $args );
 
       while ( $loop->have_posts() ) : $loop->the_post(); ?>
