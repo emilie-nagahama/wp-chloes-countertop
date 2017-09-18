@@ -68,7 +68,7 @@
 
     @include desktop {
       flex: 0 1 48%;
-      margin: 0 0 4em;
+      margin: 2em 0;
       text-align: left;
     }
 
@@ -110,10 +110,10 @@
 
     .podcast-cover-image {
       margin: 0 0 1em;
-      max-height: 276px;
+      max-height: 240px;
 
       a {
-        max-height: 276px;
+        max-height: 239px;
       }
     }
 }

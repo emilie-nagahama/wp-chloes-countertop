@@ -1661,7 +1661,7 @@ object {
     .podcast-sum {
       -ms-flex: 0 1 48%;
           flex: 0 1 48%;
-      margin: 0 0 4em;
+      margin: 2em 0;
       text-align: left; } }
   .podcast-sum .button-link {
     width: 50%;
@@ -1699,9 +1699,9 @@ object {
       margin-bottom: 2em; } }
   .archive-wrap .podcast-cover-image {
     margin: 0 0 1em;
-    max-height: 276px; }
+    max-height: 240px; }
     .archive-wrap .podcast-cover-image a {
-      max-height: 276px; }
+      max-height: 239px; }
 
 @media screen and (min-width: 1024px) {
   .home-podcast-cover-image:nth-child(-n+3) {

@@ -43,7 +43,7 @@
           the_title();
         echo '</h1></div>';
         echo '<span class="sub-text">';
-          echo CFS()->get( 'subtitle' );
+          // echo CFS()->get( 'subtitle' );
         echo '</span>';
         echo '<div class="pod-num">';
           echo CFS()->get( 'podcast_episode_number' );
