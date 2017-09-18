@@ -16,13 +16,11 @@
       $dark_text_class = 'make-dark-blue';
     endif;
 
-    if( $active_image == true ) :
-      $align_text = 'pull-text_right';
-    endif;
-
-    ?>
-
-    <li class="<?php echo $align_text; ?> home-slide" style="background-image: url(<?php echo $banner_image; ?>)">
+    if( $active_image === true ) : ?>
+      <li class="pull-text_right home-slide" style="background-image: url(<?php echo $banner_image; ?>)">
+    <?php else : ?>
+      <li class="home-slide" style="background-image: url(<?php echo $banner_image; ?>)">
+    <?php endif; ?>
 
       <div class="home-banner-text">
 
