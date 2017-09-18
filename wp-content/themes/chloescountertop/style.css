@@ -1179,8 +1179,8 @@ a {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
       #home-banner .home-slider .home-slide.pull-text_right .home-banner-text {
-        max-width: 80%;
-        margin: auto 0;
+        max-width: 90%;
+        margin: auto;
         text-align: center; }
         @media screen and (min-width: 1024px) {
           #home-banner .home-slider .home-slide.pull-text_right .home-banner-text {
@@ -2980,7 +2980,10 @@ div#button-apply:before {
     height: 100%;
     max-width: 80%;
     padding: 4% 0%;
-    margin: 0 auto 4em; }
+    margin: 0 auto 1em; }
+    @media screen and (min-width: 600px) {
+      .post-recent-wrap .podcast-wrapper {
+        margin: 0 auto 4em; } }
     .post-recent-wrap .podcast-wrapper .h4-title {
       font-weight: 500;
       font-size: 0.9em;
@@ -3144,9 +3147,13 @@ div#button-apply:before {
   margin: 2em auto;
   padding: 0; }
   .home-offering .offering {
-    -ms-flex: 1 0 30%;
-        flex: 1 0 30%;
+    -ms-flex: 1 0 100%;
+        flex: 1 0 100%;
     margin-bottom: 2em; }
+    @media screen and (min-width: 1024px) {
+      .home-offering .offering {
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%; } }
     .home-offering .offering img {
       max-width: 200px; }
     .home-offering .offering .offering-title {
