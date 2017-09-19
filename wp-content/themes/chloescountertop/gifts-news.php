@@ -8,8 +8,8 @@ get_header(); ?>
 
 <div id="gifts-banner" class="banner">
   <div class="tag-line">
-      <h2 class="h2-tag"><span>Gifts &amp; </span>News</h2>
-      <h3 class="sub-text white">Claim your FREE book chapter below</h3>
+      <h2 class="h2-tag"><span><?php _e('Monthly Downloads', 'creative_ritual'); ?> </span><?php _e('From the Divine', 'creative_ritual'); ?></h2>
+      <!-- <h3 class="sub-text white">A monthly download + conscious conversations straight in your inbox</h3> -->
   </div>
 </div>
 
@@ -18,10 +18,8 @@ get_header(); ?>
     <div id="mc_embed_signup">
 
       <div class="gifts-optin-message">
-        <h3>Join the Community at Chloe's Countertop</h3>
-        <p>
-          Be the first to hear about Podcasts, Retreats and other exclusive news!
-        </p>
+        <h3><?php _e('Join the Community at Chloe\'s Countertop', 'creative_ritual'); ?></h3>
+        <p><?php _e('Receive Chloe\'s exclusive monthly Download from the Divine and her Conscious Conversations Podcast straight to your inbox') ?></p>
       </div>
       <form action="//chloescountertop.us5.list-manage.com/subscribe/post?u=69a2680f7acd058053dfa0020&amp;id=32fc4ab161" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div class="mc-field-group">
@@ -43,11 +41,11 @@ get_header(); ?>
 <div class="container free">
   <div class="gift-wrapper">
     <div class="yellow-title free">
-      <h2 class="section-title"><span>Free</span> Chapter from the book</h2>
+      <h2 class="section-title"><?php _e('Download from the Divine Newsletter'); ?></h2>
     </div>
 
     <div class="book-cover">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/CCT-LivingInLight-Cover.jpg" alt="Living in Light Book" />
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newsletter-demo1.png" alt="Living in Light Book" />
     </div>
 
     <div class="details-right">
