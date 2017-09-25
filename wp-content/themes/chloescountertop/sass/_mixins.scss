@@ -68,6 +68,7 @@
 @mixin button {
 	color: #fff;
 	background-color: $color_pink;
+  box-shadow: none;
 	font-size: 1.5em;
 	padding: 0.2em 1em;
 	text-align: center;
@@ -86,6 +87,7 @@
 
 	&:hover, &:visited, &:active {
 		color: $color_white;
+    box-shadow: none;
 	}
 }
 
