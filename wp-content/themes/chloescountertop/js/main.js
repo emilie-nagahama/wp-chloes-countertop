@@ -1,5 +1,10 @@
 jQuery(function($) {
 
+  $('.opt-in-button').click(function(e){
+    e.preventDefault();
+    $('.gifts-optin form.form-box').toggleClass('slide-down-optin');
+  });
+
   $('.home-slider').slick({
     autoplay: true,
     autoplaySpeed: 2500,
@@ -106,8 +111,8 @@ jQuery(function($) {
   var endpointURL = 'https://api.instagram.com/v1/users/self/media/recent/?count=6&access_token=4052048.6b1d0cb.efd61d0b222a4970b3b658acc8f2a60d';
   var photoElements = '';
   var buildPhotoGrid = function (value) {
-    photoElements +=  '<li>';
-    photoElements +=      '<a href="' + value.link + '" target="_blank"><img src="' + value.images.standard_resolution.url + '"/></a>';
+    photoElements +=  '<li class="Grid-item">';
+    photoElements +=      '<a href="' + value.link + '" target="_blank" style="background: url(' + value.images.standard_resolution.url + ')"></a>';
     photoElements +=  '</li>';
   };
 
@@ -117,7 +122,7 @@ jQuery(function($) {
     url: endpointURL,
   })
   .done(function (apiData) {
-    photoElements += '<ul>';
+    photoElements += '<ul class="Grid">';
     $.each(apiData.data, function (key, value) {
       buildPhotoGrid(value);
     });
